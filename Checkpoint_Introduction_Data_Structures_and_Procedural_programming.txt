@@ -1,0 +1,22 @@
+Problem 1:
+sum:=0
+Algorithm sumarrays(set1,set2):
+for i:=0 to length(set1):
+	for j:=0 to length(set2):
+		if set1[i]==set2[j]:
+			sum+=set1[i];
+	return sum;
+
+Problem 2 
+prod:=0
+dot_product(v1,v2):
+	if length(v1)==length(v2):
+		for i:=0 to length(v1):
+			prod+=v1[i]*v2[i];
+			if prod ==0:
+				return "Orthogonal";
+			else:
+				return "Not orthogonal		
+	else:
+		return -1;
+		
