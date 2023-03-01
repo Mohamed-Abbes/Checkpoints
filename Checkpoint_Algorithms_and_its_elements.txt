@@ -1,0 +1,13 @@
+sent:="this is the sentence."
+coutWord:=0;
+countVowel:=0;
+countLength:=length(sent);
+arrVowel:=["a","i","e","o","u"]
+object
+for i:=0 to (countLength-1):
+	for j:=0 to 4:
+		if sent[i]==arrVowel[j]:
+			countVowel+=1
+	if sent[i]=="" then:
+		countWord+=1
+return countLength, countWord, countVowel
