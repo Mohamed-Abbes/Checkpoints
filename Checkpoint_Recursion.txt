@@ -1,0 +1,9 @@
+var l=length(s);
+var i=0;
+Algorithm palindrome(s,i,l):
+	if l<=1:
+		return true;
+	else if s[i]<>s[l-i-1]:
+		return false;
+	esle:
+		palindrome(s,i+1,l-1-i);
